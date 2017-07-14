@@ -6,6 +6,24 @@
 - link:
     ~/.vimrc: vimrc
     ~/.vim: vim
+    ~/.zshrc: zshrc
 
 - shell:
-    - [vim +PluginUpdate +qall]
+    -
+        description: "Clone oh-my-zsh"
+        command: "[ -e ~/.oh-my-zsh ] || git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh"
+        stdout: true
+        stderr: true
+        stdin: true
+    -
+        description: "Set zsh as login shell"
+        command: "chsh -s /bin/zsh"
+        stdout: true
+        stderr: true
+        stdin: true
+    -
+        description: "Updating VIM plugins"
+        command: "vim +PluginUpdate +qall"
+        stdout: true
+        stderr: true
+        stdin: true
