@@ -1,0 +1,11 @@
+- defaults:
+    link:
+        relink: true
+        force: true
+
+- link:
+    ~/.vimrc: vimrc
+    ~/.vim: vim
+
+- shell:
+    - [vim +PluginUpdate +qall]
