@@ -59,6 +59,8 @@ Plugin 'sirver/ultisnips'
 
 Plugin 'honza/vim-snippets'
 
+Plugin 'leafgarland/typescript-vim'
+
 call vundle#end()
 
 set ignorecase
