@@ -69,6 +69,10 @@ set ignorecase
 set completeopt=longest,menuone
 " END completin menu
 
+" typescript related configs
+autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
+" END typescript related configs
+
 " fuzzy search out of the box
 set path+=**
 set wildmenu
@@ -155,7 +159,7 @@ nmap <C-\> :NERDTreeFind<CR>
 
 set t_Co=256  " make use of 256 terminal colors 
 " color jellybeans
-colorscheme elda
+colorscheme molokai
 
 syntax enable
 
