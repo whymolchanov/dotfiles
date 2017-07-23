@@ -65,6 +65,10 @@ call vundle#end()
 
 set ignorecase
 
+" completing menu
+set completeopt=longest,menuone
+" END completin menu
+
 " fuzzy search out of the box
 set path+=**
 set wildmenu
