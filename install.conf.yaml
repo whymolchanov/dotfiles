@@ -22,7 +22,7 @@
         stdin: true
     -
         description: "Clone Vundle"
-        command: "git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
+        command: "[ -e ~/.vim/bundle/Vundle.vim ] || git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
         stdout: true
         stderr: true
         stdin: true
