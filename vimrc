@@ -103,6 +103,7 @@ set spell spelllang=en_us
 
 " adding highlight to current line
 set cursorline
+autocmd InsertEnter,InsertLeave * set cul!
 " END adding highlight to current line
 
 :command! CopyBuffer let @+ = expand('%:p')
