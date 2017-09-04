@@ -6,7 +6,7 @@ filetype on
 filetype indent on
 filetype plugin on
 syntax on
-" set foldmethod=syntax
+ set foldmethod=syntax
 
 set noswapfile
 
