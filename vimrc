@@ -74,7 +74,6 @@ autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
 " END typescript related configs
 
 " fuzzy search out of the box
-set path+=**
 set wildmenu
 "END fuzzy search out of the box
 
