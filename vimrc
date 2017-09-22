@@ -61,6 +61,8 @@ Plugin 'honza/vim-snippets'
 
 Plugin 'leafgarland/typescript-vim'
 
+Plugin 'AutoComplPop'
+
 call vundle#end()
 
 set ignorecase
