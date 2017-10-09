@@ -63,6 +63,8 @@ Plugin 'leafgarland/typescript-vim'
 
 Plugin 'AutoComplPop'
 
+Plugin 'dracula/vim'
+
 call vundle#end()
 
 set ignorecase
@@ -159,8 +161,7 @@ map <F4> :source ~/vim_session <cr>     " And load session with F4
 nmap <C-\> :NERDTreeFind<CR>
 
 set t_Co=256  " make use of 256 terminal colors 
-" color jellybeans
-colorscheme molokai
+color dracula
 
 syntax enable
 
