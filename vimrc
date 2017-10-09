@@ -98,10 +98,6 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>""
 " END of  ultisnips configuration
 
-" set spelling
-set spell spelllang=en_us
-"END set spelling
-
 " adding highlight to current line
 set cursorline
 autocmd InsertEnter,InsertLeave * set cul!
