@@ -15,23 +15,15 @@ call vundle#begin()
 
 Plugin 'ctrlpvim/ctrlp.vim'
 
-Plugin 'pangloss/vim-javascript'
-
-Plugin 'duganchen/vim-soy'
-
 Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'heavenshell/vim-jsdoc'
-
-Plugin 'nanotech/jellybeans.vim'
 
 Plugin 'scrooloose/nerdtree'
 
 Plugin 'mattn/emmet-vim'
 
 Plugin 'airblade/vim-gitgutter'
-
-Plugin 'scrooloose/syntastic'
 
 Plugin 'tpope/vim-surround'
 
@@ -45,25 +37,13 @@ Plugin 'nathanaelkane/vim-indent-guides'
 
 Plugin 'suan/vim-instant-markdown'
 
-Plugin 'mxw/vim-jsx'
-
 Plugin 'mileszs/ack.vim'
 
 Plugin 'rizzatti/dash.vim'
 
-Plugin 'flazz/vim-colorschemes'
-
 Plugin 'sareyko/neat.vim'
 
-Plugin 'sirver/ultisnips'
-
-Plugin 'honza/vim-snippets'
-
-Plugin 'leafgarland/typescript-vim'
-
 Plugin 'AutoComplPop'
-
-Plugin 'dracula/vim'
 
 call vundle#end()
 
@@ -73,32 +53,9 @@ set ignorecase
 set completeopt=longest,menuone
 " END completin menu
 
-" typescript related configs
-autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
-" END typescript related configs
-
 " fuzzy search out of the box
 set wildmenu
 "END fuzzy search out of the box
-
-" syntastic plugin config
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_python_checkers = ['pylint']
-" END syntastic plugin config
-
-" ultisnips configuration (a tool for snippets)
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>""
-" END of  ultisnips configuration
 
 " adding highlight to current line
 set cursorline
@@ -130,7 +87,7 @@ set shiftwidth=4
 " END save buffer even if vim closed
 
 set relativenumber
-set clipboard=unnamed
+"set clipboard=unnamed
 set hlsearch
 
 set laststatus=2
@@ -144,13 +101,6 @@ map <C-l> <C-w><Right>
 map <C-h> <C-w><Left>
 " ctrl-movement END
 
-" Comfortable work with VIM in cyrilic keyboard
-set keymap=russian-jcukenwin
-set iminsert=0
-set imsearch=0
-highlight lCursor guifg=NONE guibg=Cyan
-" END Comfortable work with VIM in cyrilic keyboard
-
 set pastetoggle=<F2>
 
 " store sessions
@@ -161,7 +111,6 @@ map <F4> :source ~/vim_session <cr>     " And load session with F4
 nmap <C-\> :NERDTreeFind<CR>
 
 set t_Co=256  " make use of 256 terminal colors 
-color dracula
 
 syntax enable
 
