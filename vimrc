@@ -5,8 +5,8 @@ set nocompatible
 filetype on
 filetype indent on
 filetype plugin on
-syntax on
- set foldmethod=syntax
+syntax off
+set foldmethod=syntax
 
 set noswapfile
 
@@ -109,10 +109,6 @@ map <F4> :source ~/vim_session <cr>     " And load session with F4
 " END store session hotkey
 
 nmap <C-\> :NERDTreeFind<CR>
-
-set t_Co=256  " make use of 256 terminal colors 
-
-syntax enable
 
 " check diff between saved file and changed
 function! s:DiffWithSaved()
