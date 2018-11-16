@@ -77,7 +77,6 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 
 let g:javascript_plugin_jsdoc = 1
 
-set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -141,7 +140,8 @@ set incsearch
 set showmatch
 
 " Display extra whitespace
-set list listchars=tab:»·,trail:·,nbsp:·
+set list listchars=tab:\|\ ,trail:·,nbsp:·
+hi SpecialKey ctermfg=66 guifg=#649A9A
 
 " Make it obvious where 100 characters is
 set textwidth=80
